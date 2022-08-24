@@ -1,0 +1,58 @@
+/* Variables to use for color */
+:root {
+    --dark-green-accent: #94B49F;
+    --light-green-accent: #CEE5D0;
+    /* Variables to use for fonts */
+    --font-accent: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-main: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Background color for whole page */
+html {
+    background-color: #FCF8E8;
+}
+
+/* Styling for header */
+header {
+    padding: 15px;
+    background-color: var(--light-green-accent);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 50px;
+    font-family: var(--font-accent);
+}
+
+/* To make my last name in the header a different color */
+#last-name {
+    color: var(--dark-green-accent);
+}
+
+/* Styling for navigation */
+nav {
+    display: inline-block;
+    float: right;
+    font-family: var(--font-main);
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    color: var(--dark-green-accent);
+    border-bottom: 2px solid currentColor;
+}
