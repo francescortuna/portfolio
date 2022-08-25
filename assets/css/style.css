@@ -21,25 +21,28 @@ html {
 
 /* Styling for header */
 header {
+    width: 100%;
+    height: 100px;
     padding: 15px;
     background-color: var(--light-green-accent);
 }
 
-header h1 {
-    display: inline-block;
-    font-size: 50px;
-    font-family: var(--font-accent);
+#profile-pic {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 50px;
 }
 
-/* To make my last name in the header a different color */
-#last-name {
-    color: var(--dark-green-accent);
+header img {
+    max-width: 100%;
+    max-height: 100%;
 }
-
 /* Styling for navigation */
 nav {
-    display: inline-block;
-    float: right;
+    position: absolute;
+    top: 25px;
+    right: 0;
     font-family: var(--font-main);
 }
 
@@ -55,4 +58,29 @@ nav ul li {
 nav ul li:hover {
     color: var(--dark-green-accent);
     border-bottom: 2px solid currentColor;
+}
+
+/* Styling for name and graphic */
+.name-and-graphic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+.name-and-graphic h1 {
+    font-size: 125px;
+    font-family: var(--font-accent);
+}
+
+/* To make my last name in the header a different color */
+#last-name {
+    display: block;
+    color: var(--dark-green-accent);
+}
+
+.name-and-graphic img {
+    height: 500px;
+    width: 500px;
 }
