@@ -94,3 +94,7 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
 }
+
+.articles article {
+    width: 50%;
+}
