@@ -96,5 +96,20 @@ nav ul li:hover {
 }
 
 .articles article {
+    width: 75%;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.work a {
     width: 50%;
+}
+
+.work #first-project {
+    width: 100%;
 }
