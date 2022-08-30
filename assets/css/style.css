@@ -66,21 +66,31 @@ nav ul li:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 600px;
+    height: 750px;
 }
 
 .name-and-graphic h1 {
-    font-size: 125px;
+    font-size: 100px;
     font-family: var(--font-accent);
 }
 
 /* To make my last name in the header a different color */
 #last-name {
     display: block;
+    position: relative;
+    left: 50px;
     color: var(--dark-green-accent);
 }
 
 .name-and-graphic img {
     height: 500px;
     width: 500px;
+}
+
+/* Styling for articles */
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
