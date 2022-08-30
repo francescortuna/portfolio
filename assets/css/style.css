@@ -56,6 +56,12 @@ nav ul li {
     font-weight: 500;
 }
 
+nav ul a {
+    color: var(--dark-green-accent);
+    text-decoration: none;
+}
+
+/* Styling for hover effect on nav links */
 nav ul li:hover {
     color: var(--dark-green-accent);
     border-bottom: 2px solid currentColor;
@@ -88,7 +94,7 @@ nav ul li:hover {
     width: 500px;
 }
 
-/* Styling for articles */
+/* Styling for main body of text */
 .articles {
     display: flex;
     flex-direction: column;
@@ -129,10 +135,12 @@ nav ul li:hover {
     width: 50%;
 }
 
+/* To make first project bigger size */
 .work #first-project {
     width: 100%;
 }
 
+/* Hover overlay effects for work section */
 .overlay {
     position: absolute;
     top: 0;
@@ -165,6 +173,7 @@ nav ul li:hover {
     font-size: 15px;
 }
 
+/* Styling for contact section */
 .contact a {
     color: black;
     text-decoration: none;

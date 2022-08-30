@@ -18,48 +18,59 @@
         <!-- Navigation links -->
         <nav>
             <ul>
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a href="#scroll-about">About</a></li>
+                <li><a href="#scroll-work">Work</a></li>
+                <li><a href="#scroll-contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Visual in the middle with name and graphic -->
         <section class="name-and-graphic">
             <h1>Frances <span id="last-name">Cortuna</id></h1>
             <div><img src="./assets/images/Graphic.png" alt="Screenshots of my work" /></div>
         </section>
+        <!-- Main body with the three different sections -->
         <section class="articles">
-            <article>
+        <!-- About section -->
+            <article id="scroll-about">
                 <h2>About</h2>
                 <p>Hi, my name is Frances! I am currently a third-year student at Rutgers University, majoring in Computer Science. I am also currently a coding bootcamp student! I'm working towards becoming a full stack web developer with current experience coding in HTML, CSS, and JavaScript. I'm always striving to learn more and be my best, and I look forward to my journey! </p>
             </article>
-            <article class="work">
+        <!-- Work section -->
+            <article class="work" id="scroll-work">
                 <h2>Work</h2>
+                <!-- First project, biggest picture -->
                 <a id="first-project" href="https://francescortuna.github.io/prework-study-guide/">
                     <img src="./assets/images/Prework Study Guide.png" alt="Prework Study Guide" />
+                    <!-- For hover effects that show title and desc of project -->
                     <span class="overlay">
                         <span class="overlay-title">Prework Study Guide</span>
                         <span class="overlay-desc">A study guide for the course prework using HTML and CSS.</span>
                     </span>
                 </a>
+                <!-- Second project -->
                 <a href="https://francescortuna.github.io/module1-challenge/">
                     <img src="./assets/images/Horiseon.png" alt="Horiseon Social Solution Services" />
+                    <!-- For hover effects that show title and desc of project -->
                     <span class="overlay">
                         <span class="overlay-title">Horiseon Social Solution Services</span>
                         <span class="overlay-desc">A website designed using HTML and CSS.</span>
                     </span>
                 </a>
+                <!-- Third project -->
                 <a href="https://francescortuna.github.io/password-generator/">
                     <img src="./assets/images/Password Generator.png" alt="Password Generator" /> 
+                    <!-- For hover effects that show title and desc of project -->
                     <span class="overlay">
                         <span class="overlay-title">Password Generator</span>
                         <span class="overlay-desc">Generates a password based on certain criteria using JavaScript.</span>
                     </span>
                 </a>
             </article>
-            <article class="contact">
+        <!-- Contact section -->
+            <article class="contact" id="scroll-contact">
                 <h2>Contact</h2>
                 <ul>
                     <li>Email: <a href="mailto:frances.cortuna@outlook.com">frances.cortuna@outlook.com</a></li>
@@ -70,9 +81,6 @@
         </section>
     </main>
 
-    <footer>
-
-    </footer>
 </body>
 
 </html>
