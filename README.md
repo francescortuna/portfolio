@@ -15,6 +15,7 @@ N/A
 Link to portfolio: https://francescortuna.github.io/portfolio/ 
 
 Screenshot:
+
 ![alt text](./assets/images/Screenshot.gif)
 
 ## Credits
