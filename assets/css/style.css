@@ -28,7 +28,7 @@ header {
     background-color: var(--light-green-accent);
 }
 
-#profile-pic {
+.profile-pic {
     height: 150px;
     width: 150px;
     position: absolute;
@@ -82,7 +82,7 @@ nav ul li:hover {
 }
 
 /* To make my last name in the header a different color */
-#last-name {
+.last-name {
     display: block;
     position: relative;
     left: 50px;
@@ -195,13 +195,62 @@ nav ul li:hover {
     .name-and-graphic {
         justify-content: center;
     }
+
+    /* Changes hover effect to a focus effect for tables with no hover feature */
+    .overlay:focus {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    /* Fixes header for small smartphone screens */
+    /* Fixes header for some smartphone screens */
     nav ul li {
-        display: inline-block;
         margin-left: 20px;
         margin-right: 20px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    /* Fixes header for small smartphone screens */
+    nav ul li {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+}
+
+/* Basis for smallest screens */
+@media screen and (min-width: 0) {
+    /* Gets rid of profile picture for smaller screens */
+    .profile-pic {
+        display: none;
+    }
+
+    /* Fixes nav */
+    nav ul li {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    /* Fixes name */
+    .name-and-graphic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-and-graphic h1 {
+        font-size: 30px;
+    }
+
+    .last-name {
+        position: static;
+        display: inline;
+    }
+
+    /* Fixes header for about, work, and contact sections */
+    .articles h2 {
+        font-size: 20px;
+    }
+    
 }
