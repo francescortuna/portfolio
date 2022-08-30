@@ -163,6 +163,7 @@ nav ul li:hover {
 
 .overlay-title {
     font-weight: bold;
+    text-align: center;
 }
 
 .overlay-desc {
@@ -195,11 +196,7 @@ nav ul li:hover {
     .name-and-graphic {
         justify-content: center;
     }
-
-    /* Changes hover effect to a focus effect for tables with no hover feature */
-    .overlay:focus {
-        opacity: 1;
-    }
+    
 }
 
 @media screen and (max-width: 650px) {
@@ -207,6 +204,16 @@ nav ul li:hover {
     nav ul li {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+     /* Fixes overlay title and desc font size */    
+     .overlay-title {
+        font-size: 15px;
+    }
+    
+    .overlay-desc {
+        line-height: normal;
+        font-size: 15px;
     }
 }
 
@@ -217,10 +224,19 @@ nav ul li:hover {
         margin-right: 2px;
     }
 
+     /* Fixes overlay title and desc font size */    
+     .overlay-title {
+        font-size: 10px;
+    }
+    
+    .overlay-desc {
+        line-height: normal;
+        font-size: 10px;
+    }
 }
 
 /* Basis for smallest screens */
-@media screen and (min-width: 0) {
+@media screen and (max-width: 400px) {
     /* Gets rid of profile picture for smaller screens */
     .profile-pic {
         display: none;
@@ -252,5 +268,14 @@ nav ul li:hover {
     .articles h2 {
         font-size: 20px;
     }
+
+    /* Fixes overlay title and desc font size */    
+    .overlay-title {
+        font-size: 10px;
+    }
     
+    .overlay-desc {
+        line-height: normal;
+        font-size: 5px;
+    }
 }
