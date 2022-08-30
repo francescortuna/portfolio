@@ -183,3 +183,25 @@ nav ul li:hover {
     color: var(--dark-green-accent);
     text-decoration: underline;
 }
+
+/* For responsive design */
+@media screen and (max-width: 992px) {
+    /* Hides visual for screens smaller than a tablet */
+    .name-and-graphic img {
+        display: none;
+    }
+
+    /* Centers name since visual is gone */
+    .name-and-graphic {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Fixes header for small smartphone screens */
+    nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
