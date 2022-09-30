@@ -136,8 +136,15 @@ nav ul li:hover {
 }
 
 /* To make first project bigger size */
-.work #first-project {
+.work #first-project,
+#project {
     width: 100%;
+}
+
+#salty-project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Hover overlay effects for work section */
